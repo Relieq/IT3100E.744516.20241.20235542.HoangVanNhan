@@ -5,6 +5,7 @@ public class Cart {
     private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
     private int qtyOrdered = 0;
 
+    // Phương thức gốc
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (qtyOrdered < MAX_NUMBERS_ORDERED) {
             itemsOrdered[qtyOrdered] = disc;
@@ -12,6 +13,53 @@ public class Cart {
             System.out.println("The disc has been added.");
         } else {
             System.out.println("The cart is almost full.");
+        }
+    }
+
+    // Phương thức overload 1: Thêm mảng DVD
+//    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+//        for (DigitalVideoDisc disc : dvdList) {
+//            if (qtyOrdered < MAX_NUMBERS_ORDERED) {
+//                itemsOrdered[qtyOrdered] = disc;
+//                qtyOrdered++;
+//                System.out.println("The disc " + disc.getTitle() + " has been added.");
+//            } else {
+//                System.out.println("The cart is almost full. Could not add " + disc.getTitle() + ".");
+//            }
+//        }
+//    }
+
+    // Phương thức overload 2: Thêm số lượng tùy ý DVD. Phương thức này linh hoạt hơn và có thể thay thế DigitalVideoDisc[].
+    public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
+        for (DigitalVideoDisc disc : dvds) {
+            if (qtyOrdered < MAX_NUMBERS_ORDERED) {
+                itemsOrdered[qtyOrdered] = disc;
+                qtyOrdered++;
+                System.out.println("The disc " + disc.getTitle() + " has been added.");
+            } else {
+                System.out.println("The cart is almost full. Could not add " + disc.getTitle() + ".");
+            }
+        }
+    }
+
+    // Phương thức overload: Thêm 2 DVD
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        // Thêm đĩa DVD thứ nhất
+        if (qtyOrdered < MAX_NUMBERS_ORDERED) {
+            itemsOrdered[qtyOrdered] = dvd1;
+            qtyOrdered++;
+            System.out.println("The disc " + dvd1.getTitle() + " has been added.");
+        } else {
+            System.out.println("The cart is almost full. Could not add " + dvd1.getTitle() + ".");
+        }
+
+        // Thêm đĩa DVD thứ hai
+        if (qtyOrdered < MAX_NUMBERS_ORDERED) {
+            itemsOrdered[qtyOrdered] = dvd2;
+            qtyOrdered++;
+            System.out.println("The disc " + dvd2.getTitle() + " has been added.");
+        } else {
+            System.out.println("The cart is almost full. Could not add " + dvd2.getTitle() + ".");
         }
     }
 
@@ -40,5 +88,4 @@ public class Cart {
         }
         return total;
     }
-
 }

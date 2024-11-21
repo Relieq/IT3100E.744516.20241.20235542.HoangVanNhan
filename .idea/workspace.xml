@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="" />
+    <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -26,7 +33,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "release/lab03",
+    "git-widget-placeholder": "refactor/apply-release-flow",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/IntelliJ IDEA Ultimate/Project/IT3100E-744516-20241-20235542-Hoang-Van-Nhan",
     "node.js.detected.package.eslint": "true",
@@ -55,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727332617162</updated>
       <workItem from="1727332618251" duration="1153000" />
-      <workItem from="1732171086947" duration="91000" />
+      <workItem from="1732167921739" duration="258000" />
+      <workItem from="1732168192971" duration="578000" />
     </task>
     <servers />
   </component>
