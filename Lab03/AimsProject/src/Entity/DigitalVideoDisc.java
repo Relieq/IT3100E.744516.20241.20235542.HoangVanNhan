@@ -16,6 +16,10 @@ public class DigitalVideoDisc {
         return id;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -73,7 +77,16 @@ public class DigitalVideoDisc {
         this.cost = cost;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    // Phương thức isMatch kiểm tra tiêu đề
+    public boolean isMatch(String title) {
+        return this.title.equalsIgnoreCase(title); // So sánh không phân biệt chữ hoa chữ thường
     }
+
+    // Phương thức toString để in chi tiết DVD
+    @Override
+    public String toString() {
+        return this.id + ". [Title: " + this.title + "] - [Category: " + this.category + "] - " +
+                "[Director: " + this.director + "] - [Length: " + this.length + "] - [$" + this.cost + "]";
+    }
+
 }
