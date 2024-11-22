@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/hust/soict/dsai/Lab01/ArrayOperations/ArrayOperations.iml" filepath="$PROJECT_DIR$/src/hust/soict/dsai/Lab01/ArrayOperations/ArrayOperations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/hust/soict/dsai/Lab01/DaysOfMonth/DaysOfMonth.iml" filepath="$PROJECT_DIR$/src/hust/soict/dsai/Lab01/DaysOfMonth/DaysOfMonth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/hust/soict/dsai/Lab01/JavaBasics/JavaBasics.iml" filepath="$PROJECT_DIR$/src/hust/soict/dsai/Lab01/JavaBasics/JavaBasics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/hust/soict/dsai/Lab01/Lab01.iml" filepath="$PROJECT_DIR$/src/hust/soict/dsai/Lab01/Lab01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab02/Lab02.iml" filepath="$PROJECT_DIR$/Lab02/Lab02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/hust/soict/dsai/Lab01/MatrixAddition/MatrixAddition.iml" filepath="$PROJECT_DIR$/src/hust/soict/dsai/Lab01/MatrixAddition/MatrixAddition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/OtherProjects.iml" filepath="$PROJECT_DIR$/.idea/OtherProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/hust/soict/dsai/Lab01/StarsTriangle/StarsTriangle.iml" filepath="$PROJECT_DIR$/src/hust/soict/dsai/Lab01/StarsTriangle/StarsTriangle.iml" />
+    </modules>
+  </component>
+</project>

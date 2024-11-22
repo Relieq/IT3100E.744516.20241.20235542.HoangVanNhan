@@ -1,4 +1,4 @@
-package Entity;
+package hust.soict.dsai.aims.disc;
 
 public class DigitalVideoDisc {
     // Instance variables
