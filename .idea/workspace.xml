@@ -4,88 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/ArrayOperations.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/ArrayOperations.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/ArrayOperations/src/ArrayOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/src/ArrayOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/ArrayOperations/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/DaysOfMonth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/DaysOfMonth.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/DaysOfMonth/src/DaysOfMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/src/DaysOfMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/DaysOfMonth/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/JavaBasics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/JavaBasics.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/src/ChoosingOption.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/src/ChoosingOption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/src/InputFromKeyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/src/InputFromKeyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/JavaBasics/src/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/src/answer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/Lab01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/Lab01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/JavaBasics/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/MatrixAddition.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/MatrixAddition.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/MatrixAddition/src/MatrixAddition.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/src/MatrixAddition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/MatrixAddition/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/StarsTriangle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/StarsTriangle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/StarsTriangle/src/StarsTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/src/StarsTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/src/CalculateTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/src/CalculateTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/src/EquationSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/src/EquationSolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/src/FirstDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/src/FirstDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/src/HelloNameDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/src/HelloNameDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/src/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/src/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/src/ShowTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/src/ShowTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OtherProjects/Lab01/StarsTriangle/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/AimsProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/AimsProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/src/Entity/Aims.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/src/Entity/Cart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/AimsProject/src/Entity/DigitalVideoDisc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Design/AIMS.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/AIMS.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Design/Class Diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/Class Diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/ReadingAssignment/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/ReadingAssignment/answer.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Requirement/AIMS.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Requirement/AIMS.asta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab02/Requirement/Use cases diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Requirement/Use cases diagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/AimsProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/Aims.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/Aims.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/cart/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/DigitalVideoDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/disc/DigitalVideoDisc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/aims/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/StoreTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/store/StoreTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/AimsProject/src/Entity/TestPassingParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/src/hust/soict/dsai/test/disc/TestPassingParameter.java" afterDir="false" />
-    </list>
+    <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="refactor/packages" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,7 +31,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "refactor/packages",
+    "git-widget-placeholder": "topic/memory-management-string",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/IntelliJ IDEA Ultimate/Project/IT3100E-744516-20241-20235542-Hoang-Van-Nhan/OtherProjects",
     "node.js.detected.package.eslint": "true",
