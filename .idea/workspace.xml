@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="" />
+    <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/Design/AIMS.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/AIMS.asta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +16,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="refactor/packages" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,9 +34,8 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "topic/memory-management-string",
+    "git-widget-placeholder": "release/lab03",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/IntelliJ IDEA Ultimate/Project/IT3100E-744516-20241-20235542-Hoang-Van-Nhan/OtherProjects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,18 +45,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IntelliJ IDEA Ultimate\Project\IT3100E-744516-20241-20235542-Hoang-Van-Nhan\AimsProject" />
-      <recent name="D:\IntelliJ IDEA Ultimate\Project\IT3100E-744516-20241-20235542-Hoang-Van-Nhan" />
-      <recent name="D:\IntelliJ IDEA Ultimate\Project\IT3100E-744516-20241-20235542-Hoang-Van-Nhan\OtherProjects" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -67,11 +62,6 @@
       <option name="presentableId" value="Default" />
       <updated>1727332617162</updated>
       <workItem from="1727332618251" duration="1153000" />
-      <workItem from="1732167921739" duration="258000" />
-      <workItem from="1732168192971" duration="578000" />
-      <workItem from="1732286007828" duration="948000" />
-      <workItem from="1732287631211" duration="18000" />
-      <workItem from="1732287809642" duration="103000" />
     </task>
     <servers />
   </component>
