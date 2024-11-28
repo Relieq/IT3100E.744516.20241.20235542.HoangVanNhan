@@ -1,39 +1,46 @@
 package hust.soict.dsai.aims.store;
 
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
-
+import hust.soict.dsai.aims.media.Media;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Store {
-    // Danh sách các DVD trong cửa hàng
-    private ArrayList<DigitalVideoDisc> itemsInStore = new ArrayList<>();
+    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
 
-    // Phương thức thêm DVD vào cửa hàng
-    public void addDVD(DigitalVideoDisc dvd) {
-        itemsInStore.add(dvd);
-        System.out.println("The DVD [" + dvd.getTitle() + "] has been added to the store.");
+    public void addMedia(Media media) {
+        itemsInStore.add(media);
+        System.out.println("Added media: " + media.getTitle());
     }
 
-    // Phương thức xóa DVD khỏi cửa hàng
-    public void removeDVD(DigitalVideoDisc dvd) {
-        if (itemsInStore.contains(dvd)) {
-            itemsInStore.remove(dvd);
-            System.out.println("The DVD [" + dvd.getTitle() + "] has been removed from the store.");
+    public void removeMedia(Media media) {
+        if (itemsInStore.contains(media)) {
+            itemsInStore.remove(media);
+            System.out.println("Removed media: " + media.getTitle());
         } else {
-            System.out.println("The DVD [" + dvd.getTitle() + "] is not in the store.");
+            System.out.println("Item not found in store: " + media.getTitle());
         }
     }
 
-    // Phương thức in danh sách DVD trong cửa hàng
-    public void print() {
+    public void printStore() {
         System.out.println("***********************STORE***********************");
-        if (itemsInStore.isEmpty()) {
-            System.out.println("The store is empty.");
-        } else {
-            for (DigitalVideoDisc dvd : itemsInStore) {
-                System.out.println(dvd.toString());
-            }
+        System.out.println("Items in Store:");
+        for (int i = 0; i < itemsInStore.size(); i++) {
+            System.out.println((i + 1) + ". " + itemsInStore.get(i).toString());
         }
-        System.out.println("**************************************************");
+        System.out.println("***************************************************");
+    }
+
+    public ArrayList<Media> getItemsInStore(){
+        return this.itemsInStore;
+    }
+
+    public void sortByTitle() {
+        itemsInStore.sort(Media.COMPARE_BY_TITLE_COST);
+        System.out.println("Store sorted by title (and cost for same title)");
+    }
+
+    public void sortByCost() {
+        itemsInStore.sort(Media.COMPARE_BY_COST_TITLE);
+        System.out.println("Store sorted by cost (and title for same cost)");
     }
 }

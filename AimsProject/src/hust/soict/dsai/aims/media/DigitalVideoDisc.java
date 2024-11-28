@@ -1,6 +1,6 @@
 package hust.soict.dsai.aims.media;
 
-public class DigitalVideoDisc extends Disc {
+public class DigitalVideoDisc extends Disc implements Playable {
     // Instance variables
 
     // Class variable: đếm số lượng DVD được tạo
@@ -35,16 +35,18 @@ public class DigitalVideoDisc extends Disc {
         super(nbDigitalVideoDiscs, title, category, cost, length, director);
     }
 
-    // Phương thức isMatch kiểm tra tiêu đề
-    public boolean isMatch(String title) {
-        return this.getTitle().equalsIgnoreCase(title); // So sánh không phân biệt chữ hoa chữ thường
-    }
-
     // Phương thức toString để in chi tiết DVD
     @Override
     public String toString() {
         return this.getId() + ". [Title: " + this.getTitle() + "] - [Category: " + this.getCategory() + "] - " +
                 "[Director: " + this.getDirector() + "] - [Length: " + this.getLength() + "] - [$" + this.getCost() + "]";
+    }
+
+    // Phương thức play để phát DVD
+    @Override
+    public void play() {
+        System.out.println("Playing DVD: " + this.getTitle());
+        System.out.println("DVD length: " + this.getLength());
     }
 
 }
