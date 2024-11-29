@@ -1,92 +1,41 @@
 package hust.soict.dsai.aims.cart;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
+import java.util.ArrayList;
 
 public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private DigitalVideoDisc itemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
-    private int qtyOrdered = 0;
+    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
 
-    // Phương thức gốc
-    public void addDigitalVideoDisc(DigitalVideoDisc disc) {
-        if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-            itemsOrdered[qtyOrdered] = disc;
-            qtyOrdered++;
-            System.out.println("The disc has been added.");
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
+    // Thêm Media vào giỏ hàng
+    public void addMedia(Media media) {
+        if (!itemsOrdered.contains(media)) {
+            itemsOrdered.add(media);
+            System.out.println("Added to cart: " + media.getTitle());
         } else {
-            System.out.println("The cart is almost full.");
+            System.out.println("Item already in cart: " + media.getTitle());
         }
     }
 
-    // Phương thức overload 1: Thêm mảng DVD
-//    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
-//        for (DigitalVideoDisc disc : dvdList) {
-//            if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-//                itemsOrdered[qtyOrdered] = disc;
-//                qtyOrdered++;
-//                System.out.println("The disc " + disc.getTitle() + " has been added.");
-//            } else {
-//                System.out.println("The cart is almost full. Could not add " + disc.getTitle() + ".");
-//            }
-//        }
-//    }
-
-    // Phương thức overload 2: Thêm số lượng tùy ý DVD. Phương thức này linh hoạt hơn và có thể thay thế DigitalVideoDisc[].
-    public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
-        for (DigitalVideoDisc disc : dvds) {
-            if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-                itemsOrdered[qtyOrdered] = disc;
-                qtyOrdered++;
-                System.out.println("The disc " + disc.getTitle() + " has been added.");
-            } else {
-                System.out.println("The cart is almost full. Could not add " + disc.getTitle() + ".");
-            }
+    // Xóa Media khỏi giỏ hàng
+    public void removeMedia(Media media) {
+        if (itemsOrdered.contains(media)) {
+            itemsOrdered.remove(media);
+            System.out.println("Removed from cart: " + media.getTitle());
+        } else {
+            System.out.println("Item not found in cart: " + media.getTitle());
         }
     }
 
-    // Phương thức overload: Thêm 2 DVD
-    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
-        // Thêm đĩa DVD thứ nhất
-        if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-            itemsOrdered[qtyOrdered] = dvd1;
-            qtyOrdered++;
-            System.out.println("The disc " + dvd1.getTitle() + " has been added.");
-        } else {
-            System.out.println("The cart is almost full. Could not add " + dvd1.getTitle() + ".");
-        }
-
-        // Thêm đĩa DVD thứ hai
-        if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-            itemsOrdered[qtyOrdered] = dvd2;
-            qtyOrdered++;
-            System.out.println("The disc " + dvd2.getTitle() + " has been added.");
-        } else {
-            System.out.println("The cart is almost full. Could not add " + dvd2.getTitle() + ".");
-        }
-    }
-
-    public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
-        if (qtyOrdered > 0) {
-            for (int i = 0; i < qtyOrdered; i++) {
-                if (itemsOrdered[i].getTitle().equals(disc.getTitle())) {
-                    for (int j = i; j < qtyOrdered - 1; j++) {
-                        itemsOrdered[j] = itemsOrdered[j + 1];
-                    }
-                    qtyOrdered--;
-                    System.out.println("The disc has been removed.");
-                    return;
-                }
-            }
-            System.out.println("The disc is not in the cart.");
-        } else {
-            System.out.println("The cart is empty.");
-        }
-    }
-
+    // Tính tổng giá
     public float totalCost() {
         float total = 0;
-        for (int i = 0; i < qtyOrdered; i++) {
-            total += itemsOrdered[i].getCost();
+        for (Media media : itemsOrdered) {
+            total += media.getCost();
         }
         return total;
     }
@@ -95,18 +44,18 @@ public class Cart {
     public void print() {
         System.out.println("***********************CART***********************");
         System.out.println("Ordered Items:");
-        for (int i = 0; i < qtyOrdered; i++) {
-            System.out.println(itemsOrdered[i].toString());
+        for (Media media : itemsOrdered) {
+            System.out.println(media.toString());
         }
-        System.out.println("Total cost: $" + totalCost());
+        System.out.println("Total cost: $" + this.totalCost());
         System.out.println("*************************************************");
     }
 
     // Tìm DVD theo ID
-    public DigitalVideoDisc searchById(int id) {
-        for (int i = 0; i < qtyOrdered; i++) {
-            if (itemsOrdered[i].getId() == id) {
-                return itemsOrdered[i];
+    public Media searchById(int id) {
+        for (Media media : itemsOrdered) {
+            if (media.getId() == id) {
+                return media;
             }
         }
         System.out.println("No match found for ID: " + id);
@@ -114,10 +63,10 @@ public class Cart {
     }
 
     // Tìm DVD theo title
-    public DigitalVideoDisc searchByTitle(String title) {
-        for (int i = 0; i < qtyOrdered; i++) {
-            if (itemsOrdered[i].isMatch(title)) {
-                return itemsOrdered[i];
+    public Media searchByTitle(String title) {
+        for (Media media : itemsOrdered) {
+            if (media.isMatch(title)) {
+                return media;
             }
         }
         System.out.println("No match found for title: " + title);

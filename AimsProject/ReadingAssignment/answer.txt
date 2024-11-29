@@ -1,17 +1,40 @@
-Section 2.1: Overloading by differing types of parameters
-*Question: What do you prefer between passing an array parameter and passing an arbitrary number of arguments for DVDs?
-I would prefer the method that allows passing an arbitrary number of arguments (addDigitalVideoDisc(DigitalVideoDisc... dvds)) because it is more flexible. This approach does not require creating an array beforehand and allows direct addition of multiple DVDs in a single method call.
+Section 9: Constructors of whole classes and parent classes
+*Question: Which classes are aggregates of other classes? Checking all constructors of whole classes if they initialize for their parts?
+Answer:
+- CompactDisc
+    Aggregate of: Track
+- Store and Cart
+    Aggregate of: Media (which includes Book, DigitalVideoDisc, and CompactDisc)
 
-Section 3: Passing parameters in Java
-*Question: Is Java a pass-by-value or pass-by-reference programming language?
-Java is strictly pass-by-value. When passing primitive types to a method, their values are copied. For objects, the reference to the object is passed by value, meaning the method receives a copy of the reference, not the actual object itself.
+Section 12: Sort media in the cart
+Suppose we are taking this Comparable interface approach.
+*Question: What class should implement the Comparable interface?
+Answer: The Media class should implement the Comparable interface, as it is the base class for sorting different types of media (like DigitalVideoDisc, CompactDisc, etc.) in a consistent way.
 
-*Question: Why do the titles of the two objects remain unchanged after calling swap(jungleDVD, cinderellaDVD)?
-The swap method works with copies of the references. Changing these references inside the method does not affect the original references in the calling method.
+*Question: In those classes, how should you implement the compareTo() method be to reflect the ordering that we want?
+Answer: In the Media class, implement compareTo() to compare media items based on the title and cost. For example:
+@Override
+public int compareTo(Media other) {
+    int titleComparison = this.title.compareTo(other.title);
+    if (titleComparison != 0) return titleComparison;
+    return Float.compare(this.cost, other.cost);
+}
 
-*Question: Why does the title of jungleDVD change after calling changeTitle(jungleDVD, cinderellaDVD.getTitle())?
-The reference copy points to the same object as the original reference. Modifying the state of the object via this reference affects the original object, as they both refer to the same memory location.
+*Question: Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach?
+Answer: Yes, you can use the Comparable interface for one ordering rule (e.g., by title then cost) and implement a separate Comparator interface for the other rule (e.g., by cost then title), allowing for multiple ordering rules.
 
-Section 6: Cart class enhancements
-*Question: What should be the return type of the toString() method in the DigitalVideoDisc class?
-The toString() method should return a String. This method provides a textual representation of the DigitalVideoDisc object, including its details such as title, category, director, length, and price.
+*Question: Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this?
+In the DigitalVideoDisc class, override the compareTo() method to reflect this specific ordering rule:
+@Override
+public int compareTo(Media other) {
+    if (other instanceof DigitalVideoDisc) {
+        DigitalVideoDisc otherDVD = (DigitalVideoDisc) other;
+        int titleComparison = this.title.compareTo(otherDVD.title);
+        if (titleComparison != 0) return titleComparison;
+        int lengthComparison = Integer.compare(otherDVD.length, this.length); // Decreasing length
+        if (lengthComparison != 0) return lengthComparison;
+        return Float.compare(this.cost, otherDVD.cost);
+    }
+    return super.compareTo(other); // Use default compare for other media types
+}
+
