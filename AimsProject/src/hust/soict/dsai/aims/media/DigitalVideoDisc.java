@@ -1,52 +1,75 @@
 package hust.soict.dsai.aims.media;
 
-public class DigitalVideoDisc extends Disc implements Playable {
-    // Instance variables
+import java.awt.Component;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
-    // Class variable: đếm số lượng DVD được tạo
-    private static int nbDigitalVideoDiscs = 0;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
 
-    // Constructor
-    public DigitalVideoDisc() {
-        super(); // Gọi constructor của Media
+import hust.soict.dsai.aims.exception.*;
+
+
+public class DigitalVideoDisc extends Disc {
+
+    public String getType() {
+        return "DVD";
     }
 
-    public static int getNbDigitalVideoDiscs() {
-        return nbDigitalVideoDiscs;
+    public String getDetails() {
+        return ("Product ID: " + String.valueOf(this.getId())
+                + "\n" + "\t" + "Title: " + this.getTitle()
+                + "\n" + "\t" + "Category: " + this.getCategory()
+                + "\n" + "\t" + "Director: " + this.getDirector()
+                + "\n" + "\t" + "Length: " + String.valueOf(this.getLength()) + " minutes"
+                + "\n" + "\t" + "Price: $" + String.valueOf(this.getCost()));
+    }
+
+    public void play() throws PlayerException {
+        if (this.getLength() <= 0) {
+            throw new PlayerException("ERROR: DVD length is non-positive!");
+        } else {
+            System.out.println("Playing DVD: " + this.getTitle());
+            System.out.println("DVD length: " + this.getLength());
+
+            Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+            JPanel p = new JPanel();
+            JDialog d = new JDialog();
+            JLabel l1 = new JLabel("Now playing: " + this.getTitle());
+            JLabel l2 = new JLabel("DVD length: " + this.getLength());
+            p.setLayout(new BoxLayout(p, BoxLayout.Y_AXIS));
+            l1.setAlignmentX(Component.CENTER_ALIGNMENT);
+            l2.setAlignmentX(Component.CENTER_ALIGNMENT);
+            d.setTitle("Media Player");
+            p.add(Box.createVerticalGlue());
+            p.add(l1);
+            p.add(l2);
+            p.add(Box.createVerticalGlue());
+            d.add(p);
+            d.setSize(250,100);
+            int w = d.getSize().width;
+            int h = d.getSize().height;
+            int x = (dim.width - w) / 2;
+            int y = (dim.height - h) / 2;
+            d.setLocation(x, y);
+            d.setVisible(true);
+        }
     }
 
     public DigitalVideoDisc(String title) {
-        nbDigitalVideoDiscs++;
-        super(nbDigitalVideoDiscs, title);
+        super(title);
     }
-
     public DigitalVideoDisc(String title, String category, float cost) {
-        nbDigitalVideoDiscs++;
-        super(nbDigitalVideoDiscs, title, category, cost);
+        super(title, category, cost);
     }
-
-    public DigitalVideoDisc(String director, String category, String title, float cost) {
-        nbDigitalVideoDiscs++;
-        super(nbDigitalVideoDiscs, title, category, cost, director);
+    public DigitalVideoDisc(String title, String category, String director, float cost) {
+        super(title, category, director, cost);
     }
-
     public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
-        nbDigitalVideoDiscs++;
-        super(nbDigitalVideoDiscs, title, category, cost, length, director);
-    }
-
-    // Phương thức toString để in chi tiết DVD
-    @Override
-    public String toString() {
-        return this.getId() + ". [Title: " + this.getTitle() + "] - [Category: " + this.getCategory() + "] - " +
-                "[Director: " + this.getDirector() + "] - [Length: " + this.getLength() + "] - [$" + this.getCost() + "]";
-    }
-
-    // Phương thức play để phát DVD
-    @Override
-    public void play() {
-        System.out.println("Playing DVD: " + this.getTitle());
-        System.out.println("DVD length: " + this.getLength());
+        super(title, category, director, length, cost);
     }
 
 }

@@ -361,10 +361,10 @@ public class Aims {
             switch (option) {
                 case 1:
                     cart.getItemsOrdered().sort(Media.COMPARE_BY_TITLE_COST);
-                    return cart.getItemsOrdered();
+                    return (ArrayList<Media>) cart.getItemsOrdered();
                 case 2:
                     cart.getItemsOrdered().sort(Media.COMPARE_BY_COST_TITLE);
-                    return cart.getItemsOrdered();
+                    return (ArrayList<Media>) cart.getItemsOrdered();
                 default:
                     System.out.println("Invalid option. Please try again.");
                     break;

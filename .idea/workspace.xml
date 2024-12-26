@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b60a2e3-f547-494c-a139-2e5164a964aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AimsProject/Design/AIMS.asta" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/Design/AIMS.asta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AimsProject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AimsProject/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "release/lab03",
+    "git-widget-placeholder": "release/lab05",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -48,8 +48,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
       </set>
     </attachedChunks>
   </component>
@@ -62,6 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1727332617162</updated>
       <workItem from="1727332618251" duration="1153000" />
+      <workItem from="1733979126281" duration="371000" />
+      <workItem from="1733979652519" duration="252000" />
     </task>
     <servers />
   </component>

@@ -1,84 +1,106 @@
 package hust.soict.dsai.aims.media;
-
+import java.time.LocalDate;
 import java.util.Comparator;
 
 public abstract class Media {
-    // Các thuộc tính chung
-    private int id;
     private String title;
     private String category;
     private float cost;
+    private LocalDate dateAdded;
+    private int id;
+    private static int nbMedia = 1;
 
     public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
     public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
 
-    // Constructor không tham số
-    public Media() {
+    public Media(int id, String title, String category, float cost) {
+        this.title = title;
+        this.category = category;
+        this.cost = cost;
+        this.id = id;
+        this.dateAdded = LocalDate.now();
+        nbMedia += 1;
+    }
+
+    public boolean equals(Object medium) {
+        if (medium instanceof Media) {
+            try {
+                Media that = (Media) medium;
+                return this.title.toLowerCase().equals(that.getTitle().toLowerCase());
+            } catch (NullPointerException e1) {
+                return false;
+            } catch (ClassCastException e2) {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public boolean search(String title) {
+        return this.title.toLowerCase().contains(title.toLowerCase());
+    }
+
+    public Media(String title, String category, float cost) {
+        super();
+        this.title = title;
+        this.category = category;
+        this.cost = cost;
+        this.id = nbMedia;
+        nbMedia += 1;
+    }
+
+    public Media(String title, String category) {
+        super();
+        this.title = title;
+        this.category = category;
+        this.id = nbMedia;
+        nbMedia += 1;
     }
 
     public Media(int id, String title) {
         this.id = id;
         this.title = title;
+        nbMedia += 1;
     }
 
-    // Constructor đầy đủ
-    public Media(int id, String title, String category, float cost) {
-        this.id = id;
+    public Media(String title) {
+        super();
         this.title = title;
-        this.category = category;
-        this.cost = cost;
+        this.id = nbMedia;
+        nbMedia += 1;
     }
 
-
-    // Getter và Setter
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public String getCategory() {
         return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
     }
 
     public float getCost() {
         return cost;
     }
 
-    public void setCost(float cost) {
-        this.cost = cost;
+    public LocalDate getDateAdded() {
+        return dateAdded;
     }
 
-    // Phương thức toString() chung cho các lớp con
-    @Override
+    public void setDateAdded(LocalDate date) {
+        this.dateAdded = date;
+    }
+
+    public abstract String getType();
+
+    public abstract String getDetails();
+
     public String toString() {
-        return "Media [ID: " + id + ", Title: " + title + ", Category: " + category + ", Cost: $" + cost + "]";
+        return this.getDetails();
     }
 
-    // Phương thức isMatch kiểm tra tiêu đề
-    public boolean isMatch(String title) {
-        return this.getTitle().equalsIgnoreCase(title); // So sánh không phân biệt chữ hoa chữ thường
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Media media = (Media) obj;
-        return title.equalsIgnoreCase(media.title);
-    }
 }

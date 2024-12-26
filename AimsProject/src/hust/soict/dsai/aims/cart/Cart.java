@@ -1,75 +1,87 @@
 package hust.soict.dsai.aims.cart;
 
+import hust.soict.dsai.aims.exception.LimitExceedException;
 import hust.soict.dsai.aims.media.Media;
-import java.util.ArrayList;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Cart {
+    private ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
     public static final int MAX_NUMBERS_ORDERED = 20;
-    private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
 
-    public ArrayList<Media> getItemsOrdered() {
+    public ObservableList<Media> getItemsOrdered(){
         return itemsOrdered;
     }
 
-    // Thêm Media vào giỏ hàng
-    public void addMedia(Media media) {
-        if (!itemsOrdered.contains(media)) {
+    public void addMedia(Media media) throws LimitExceedException {
+        if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(media);
-            System.out.println("Added to cart: " + media.getTitle());
+            System.out.println("The media has been added: " + media.getTitle());
         } else {
-            System.out.println("Item already in cart: " + media.getTitle());
+            System.out.println("The cart is almost full");
         }
     }
 
-    // Xóa Media khỏi giỏ hàng
     public void removeMedia(Media media) {
         if (itemsOrdered.contains(media)) {
             itemsOrdered.remove(media);
-            System.out.println("Removed from cart: " + media.getTitle());
+            System.out.println("The media has been removed: " + media.getTitle());
         } else {
-            System.out.println("Item not found in cart: " + media.getTitle());
+            System.out.println("The media is not in the cart");
         }
     }
 
-    // Tính tổng giá
     public float totalCost() {
-        float total = 0;
+        float totalCost = 0;
         for (Media media : itemsOrdered) {
-            total += media.getCost();
+            totalCost += media.getCost();
         }
-        return total;
+        return totalCost;
     }
 
-    // Phương thức in chi tiết giỏ hàng
     public void print() {
         System.out.println("***********************CART***********************");
         System.out.println("Ordered Items:");
-        for (Media media : itemsOrdered) {
-            System.out.println(media.toString());
+        for (int i = 0; i < itemsOrdered.size(); i++) {
+            System.out.println((i + 1) + ". " + itemsOrdered.get(i).toString());
         }
-        System.out.println("Total cost: $" + this.totalCost());
-        System.out.println("*************************************************");
+        System.out.println("Total cost: " + totalCost() + " $");
+        System.out.println("***************************************************");
     }
 
-    // Tìm DVD theo ID
-    public Media searchById(int id) {
+    public void searchById(int id) {
+        boolean found = false;
         for (Media media : itemsOrdered) {
             if (media.getId() == id) {
-                return media;
+                System.out.println("Found: " + media.toString());
+                found = true;
+                break;
             }
         }
-        System.out.println("No match found for ID: " + id);
-        return null;
+        if (!found) {
+            System.out.println("No match found for ID: " + id);
+        }
     }
 
-    // Tìm DVD theo title
-    public Media searchByTitle(String title) {
+    public void searchByTitle(String title) {
+        boolean found = false;
         for (Media media : itemsOrdered) {
-            if (media.isMatch(title)) {
-                return media;
+            if (media.getTitle().equalsIgnoreCase(title)) {
+                System.out.println("Found: " + media.toString());
+                found = true;
             }
         }
-        System.out.println("No match found for title: " + title);
-        return null;
+        if (!found) {
+            System.out.println("No match found for title: " + title);
+        }
+    }
+
+    public int getSize() {
+        return itemsOrdered.size();
+    }
+
+    public void empty() {
+        itemsOrdered.clear();
+        return;
     }
 }

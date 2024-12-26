@@ -1,52 +1,58 @@
 package hust.soict.dsai.aims.media;
 
-public class Disc extends Media {
-    private int length;
-    private String director;
+import hust.soict.dsai.aims.exception.PlayerException;
 
-    // Constructor
-    public Disc() {
-        super();
+public class Disc extends Media implements Playable {
+    private String director;
+    private int length;
+
+    public Disc(String title, String category, String director, float cost) {
+        super(title, category, cost);
+        this.director = director;
     }
 
-    public Disc(int id, String title) {
-        super(id, title);
+    public Disc(String title, String category, String director, int length, float cost) {
+        super(title, category, cost);
+        this.director = director;
+        this.length = length;
     }
 
     public Disc(int id, String title, String category, float cost) {
         super(id, title, category, cost);
     }
 
-    public Disc(int id, String title, String category, float cost, String director) {
-        super(id, title, category, cost);
-        this.director = director;
+    public Disc(String title, String category, float cost) {
+        super(title, category, cost);
     }
 
-    public Disc(int id, String title, String category, float cost, int length, String director) {
-        super(id, title, category, cost);
-        this.length = length;
-        this.director = director;
+    public Disc(String title, String category) {
+        super(title, category);
     }
 
-    // Getter và Setter
-    public int getLength() {
-        return length;
+    public Disc(String title) {
+        super(title);
     }
 
-    public void setLength(int length) {
-        this.length = length;
+    @Override
+    public String getType() {
+        return "";
+    }
+
+    @Override
+    public String getDetails() {
+        return "";
     }
 
     public String getDirector() {
         return director;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public int getLength() {
+        return length;
     }
 
     @Override
-    public String toString() {
-        return super.toString() + ", Length: " + length + ", Director: " + director;
+    public void play() throws PlayerException {
+
     }
 }
